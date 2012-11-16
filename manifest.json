@@ -1,0 +1,22 @@
+﻿{
+   "description": "Walk you to the quite place",
+   "icons": {
+      "128": "logo128.png",
+      "16": "logo16.png",
+      "32": "logo32.png",
+      "48": "logo.png"
+   },
+   "minimum_chrome_version": "11",
+   "name": "Walk you to the quite place",
+   "version": "0.1",
+   "background": {
+    "scripts": ["jquery-1.7.1.min.js","background.js"],
+    "persistent": false
+  },
+  "options_page": "options.html",
+  "permissions": [
+	  "tabs",
+	  "webNavigation"
+	],
+  "manifest_version": 2
+}

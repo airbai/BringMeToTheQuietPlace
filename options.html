@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+  <head>
+	<meta charset="utf-8">
+    <title>WALK YOU TO THE QUITE PLACE OPTIONS PAGE</title>
+    <style>
+    html, body{width:100%; height:100%; cursor:default;}
+	body {background-color:#f9f9f9; color:#808080; text-shadow:0 1px #fff; font-family:Tahoma, Helvetica, sans-serif; font-size:13px;}
+	#txtRedirect{width:500px}
+	.del,.del:hover,.del:active
+	{
+	    -webkit-box-shadow: none;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        min-width: 0;
+        padding: 1px 6px;
+        background-image: -webkit-image-set(url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAiElEQVR42r2RsQrDMAxEBRdl8SDcX8lQPGg1GBI6lvz/h7QyRRXV0qUULwfvwZ1tenw5PxToRPWMC52eA9+WDnlh3HFQ/xBQl86NFYJqeGflkiogrOvVlIFhqURFVho3x1moGAa3deMs+LS30CAhBN5nNxeT5hbJ1zwmji2k+aF6NENIPf/hs54f0sZFUVAMigAAAABJRU5ErkJggg==') 1x);
+
+	    display:none;
+	}
+	.del:hover
+	{
+	    background-image: -webkit-image-set( url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAqklEQVR4XqWRMQ6DMAxF/1Fyilyj2SmIBUG5QcTCyJA5Z8jGhlBPgRi4TmoDraVmKFJlWYrlp/g5QfwRlwEVNWVa4WzfH9jK6kCkEkBjwxOhLghheMWMELUAqqwQ4OCbnE4LJnhr5IYdqQt4DJQjhe9u4vBBmnxHHNzRFkDGjHDo0VuTAqy2vAG4NkvXXDHxbGsIGlj3e835VFNtdugma/Jk0eXq0lP//5svi4PtO01oFfYAAAAASUVORK5CYII=') 1x);
+	}
+	.del:active
+	{
+	}
+	button.default, button.default:hover
+	{
+	    -webkit-appearance: none;
+        -webkit-transition: opacity 150ms;
+        background: #8AAAED;
+        border: none;
+        border-radius: 2px;
+        color: white;
+        font-weight: bold;
+        opacity: 0.7;
+        display:none;
+	}
+	button.default:hover
+	{
+	    opacity: 1;
+	}
+	.site
+	{
+	    width:280px;
+	    -webkit-box-flex: 1;
+	    overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+	}
+	ul
+	{
+        border: 1px solid #D9D9D9;
+        border-radius: 2px;
+	}
+	h3 {
+    color: black;
+    font-size: 1.2em;
+    margin-bottom: 0.8em;
+    }
+	li, li.default, li:hover
+	{
+	    -webkit-box-flex: 1;
+	    list-style-type:none;
+	    width:510px;
+	    display: -webkit-box;
+	    -webkit-box-align: center;
+        -webkit-transition: 150ms background-color;
+        border: none;
+        border-radius: 0;
+        box-sizing: border-box;
+        display: -webkit-box;
+        height: 32px;
+        margin: 0;
+	}
+	li.default
+	{
+	    font-weight: bold;
+	}
+	li:hover
+	{
+	    background-color: #BBCEE9;
+	}
+	li span
+	{
+	    width:16px;
+	    display: -webkit-box;
+	}
+	li span[del]
+	{
+	    -webkit-box-flex: 1;
+	}
+	input[type=text]
+	{
+	    width:500px;
+	}
+	span[del]:first-child
+	{
+	    -webkit-box-flex: 1;
+	}
+	.overlay {
+    -webkit-box-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-transition: 200ms opacity;
+    background-color: rgba(255, 255, 255, 0.75);
+    bottom: 0;
+    display: -webkit-box;
+    left: 0;
+    overflow: auto;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    }
+	.overlay .page 
+	{
+	    max-height: 640px;
+	    width: 700px;
+        -webkit-border-radius: 3px;
+        -webkit-box-orient: vertical;
+        -webkit-transition: 200ms -webkit-transform;
+        background: white;
+        box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);
+        color: #333;
+        display: -webkit-box;
+        min-width: 400px;
+        padding: 0;
+        position: relative;
+        }
+        .overlay .page .content-area {
+        -webkit-box-flex: 1;
+        overflow: auto;
+        padding: 6px 17px 6px;
+        position: relative;
+        }
+    </style>
+    <script src="jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="options.js" type="text/javascript"></script>
+  </head>
+  <body>
+  <div class="overlay">
+  <div class="page">
+  <div class="content-area">
+    <h1>Set up the places</h1>
+    <hr />
+    <h3>Places want to escape</h3>
+    <ul id="ulBeRedirect">
+    <li><input type="text" id="txtBeRedirect" placeholder="Input an site domain to add" /></li>
+    </ul>
+    <h3>The quiet place</h3>
+    <ul>
+    <li><input type="text" id="txtRedirect" placeholder="Input an site domain to add" /></li>
+    </ul>
+    </div>
+</div>
+</div>
+  </body>
+</html>
