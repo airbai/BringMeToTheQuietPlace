@@ -1,0 +1,46 @@
+{
+   "extDesc": {
+      "description": "",
+      "message": "When you can wait to refresh Twitter, Facebook time and time again, this extension will walk you to the quiet places automatically, like http://thequietplaceproject.com. Surely you can choose your own quiet place on the Options page."
+   },
+   "extName": {
+      "description": "",
+      "message": "Walk me to the quiet place"
+   },
+   "optionsSetupThePlaces": {
+      "description": "",
+      "message": "Setup The Places"
+   },
+   "optionsPlacesWantToEscape":{
+      "description": "",
+      "message": "Places Want To Escape"
+   },
+   "optionsTheQuietPalces":{
+      "description": "",
+      "message": "The Quiet Palces"
+   },
+   "optionsInputSiteDomainToAdd":{
+      "description": "",
+      "message": "Input Site Domain To Add"
+   },
+   "optionsMakeDefault":{
+      "description": "Make Default",
+      "message": "Make Default"
+   },
+   "popupEnable":{
+      "description": "",
+      "message": "Choose"
+   },
+   "popupDisable":{
+      "description": "",
+      "message": "Not Choose"
+   },
+   "popupTheQuietPlaceProjectTitle":{
+      "description": "",
+      "message": "the quiet place project"
+   },
+   "popupTheQuietPlaceProjectDesc":{
+      "description": "",
+      "message": "millions of residents chose quiet.&nbsp;You?"
+   }
+}

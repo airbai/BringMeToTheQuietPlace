@@ -1,22 +1,29 @@
 ﻿{
-   "description": "Walk you to the quite place",
+   "description": "__MSG_extDesc__",
    "icons": {
       "128": "logo128.png",
       "16": "logo16.png",
       "32": "logo32.png",
       "48": "logo.png"
    },
+   "browser_action": {
+      "default_icon": "logo.png",
+      "default_popup": "popup.html",
+      "default_title": "__MSG_extName__"
+   },
    "minimum_chrome_version": "11",
-   "name": "Walk you to the quite place",
+   "name": "__MSG_extName__",
    "version": "0.1",
    "background": {
     "scripts": ["jquery-1.7.1.min.js","background.js"],
-    "persistent": false
+    "persistent": true
   },
   "options_page": "options.html",
   "permissions": [
 	  "tabs",
-	  "webNavigation"
+	  "webNavigation",
+	  "storage"
 	],
+  "default_locale": "en",
   "manifest_version": 2
 }

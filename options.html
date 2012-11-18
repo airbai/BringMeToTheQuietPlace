@@ -2,7 +2,7 @@
 <html>
   <head>
 	<meta charset="utf-8">
-    <title>WALK YOU TO THE QUITE PLACE OPTIONS PAGE</title>
+    <title></title>
     <style>
     html, body{width:100%; height:100%; cursor:default;}
 	body {background-color:#f9f9f9; color:#808080; text-shadow:0 1px #fff; font-family:Tahoma, Helvetica, sans-serif; font-size:13px;}
@@ -42,14 +42,23 @@
 	{
 	    opacity: 1;
 	}
-	.site
-	{
-	    width:280px;
-	    -webkit-box-flex: 1;
-	    overflow: hidden;
+    .site
+    {
+        width:480px;
+        -webkit-box-flex: 1;
+        overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-	}
+    }
+	
+    .place
+    {
+        width:280px;
+        -webkit-box-flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
 	ul
 	{
         border: 1px solid #D9D9D9;
@@ -144,15 +153,15 @@
   <div class="overlay">
   <div class="page">
   <div class="content-area">
-    <h1>Set up the places</h1>
+    <h1 id="optionsSetupThePlaces"></h1>
     <hr />
-    <h3>Places want to escape</h3>
+    <h3 id="optionsPlacesWantToEscape"></h3>
     <ul id="ulBeRedirect">
-    <li><input type="text" id="txtBeRedirect" placeholder="Input an site domain to add" /></li>
+    <li><input type="text" id="txtBeRedirect" /></li>
     </ul>
-    <h3>The quiet place</h3>
-    <ul>
-    <li><input type="text" id="txtRedirect" placeholder="Input an site domain to add" /></li>
+    <h3 id="optionsTheQuietPalces"></h3>
+    <ul id="ulQuietPlaces">
+    <li><input type="text" id="txtRedirect" /></li>
     </ul>
     </div>
 </div>
